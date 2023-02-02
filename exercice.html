@@ -9,28 +9,36 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo-wrapper">
-            <img width="25" height="25" src="Luffy.jpg" alt="Deep Space inc. logo" class="logo" />
-            <span class="company-name">Deep Space inc.</span>
-        </div>
-        <div class="menu">
-            <div class="menu-item">A propos</div>
-            <div class="menu-item">Contact</div>
-        </div>
-    </header>
-    <div class="content">
-        <img src="miky.jpg" />
-        <img src="miky.jpg" />
-        <img src="miky.jpg" />
-        <img src="miky.jpg" />
-        <img src="miky.jpg" />
-        <img src="miky.jpg" />
-        <img src="miky.jpg" />
-        <img src="miky.jpg" />
-        <img src="miky.jpg" />
-        <img src="miky.jpg" />
-    </div>
+    <table border="1">
+        <caption>Liste des employés</caption>
+
+        <thead>
+            <tr>
+                <th>Ville</th>
+                <th>Prénom</th>
+                <th>E-mail</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Toulon</td>
+                <td>Paul</td>
+                <td><a href="mailto:paul@mail.fr">paul@mail.fr</a></td>
+
+            </tr>
+            <tr>
+                <td rowspan="2">Brest</td>
+                <td>Julie</td>
+                <td><a href="mailto:julie@mail.fr">julie@mail.fr</a></td>
+            </tr>
+            <tr>
+                <td>Karine</td>
+                <td><a href="mailto:karine@mail.fr">karine@mail.fr</a></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
