@@ -1,44 +1,49 @@
-header {
-    display: flex;
-    justify-content: space-between;
+body {
+    font-family: Calibri, serif;
 }
 
-
-.logo-wrapper,
-.menu {
-    display: flex;
-    align-items: center;
+form {
+    max-width: 50%;
 }
 
-.logo {
-    height: 5rem;
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label.inline-label {
+    display: inline-block;
+}
+
+fieldset {
+    border: 1px solid lightgray;
+    background-color: rgba(225, 233, 255, 0.25);
+}
+
+legend {
+    font-style: italic;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+form input,
+form select,
+form textarea {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+form input[type="radio"],
+form input[type="checkbox"],
+form input[type="submit"] {
     width: auto;
-    float: left;
 }
 
-.company-name {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.menu-item {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1200px;
-    min-height: 600px;
-    padding: 30px;
-    margin: auto;
-    background: #ffeeee;
-}
-
-.content img {
-    width: 300px;
-    height: 300px;
+button[type=submit],
+button[type=reset] {
+    padding: 10px;
+    margin-top: 15px;
 }
