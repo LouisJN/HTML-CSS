@@ -9,11 +9,23 @@
 
 .wrapper {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: [start] 200px [top-separator] 200px [bottom-separator] 200px [end];
+    grid-template-columns: [col-start] 1fr [separator-left] 1fr [separator-right] 1fr [col-end];
+    grid-template-rows: [row-start] 1fr [separator-top] 1fr [separator-bottom] 1fr [row-end];
     grid-template-areas:
-        "header header header"
-        "archives content ads"
-        "sponsors footer footer"
-    ;
+        ". header ."
+        "content . ads"
+        "footer footer footer";
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
 }
