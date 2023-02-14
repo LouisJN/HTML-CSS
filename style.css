@@ -1,49 +1,19 @@
-body {
-    font-family: Calibri, serif;
+.wrapper {
+
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
-form {
-    max-width: 50%;
-}
 
-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-label.inline-label {
-    display: inline-block;
-}
-
-fieldset {
-    border: 1px solid lightgray;
-    background-color: rgba(225, 233, 255, 0.25);
-}
-
-legend {
-    font-style: italic;
-    font-size: 1.1em;
-    padding: 5px;
-}
-
-form input,
-form select,
-form textarea {
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 80%;
-}
-
-form input[type="radio"],
-form input[type="checkbox"],
-form input[type="submit"] {
-    width: auto;
-}
-
-button[type=submit],
-button[type=reset] {
-    padding: 10px;
-    margin-top: 15px;
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: [start] 200px [top-separator] 200px [bottom-separator] 200px [end];
+    grid-template-areas:
+        "header header header"
+        "archives content ads"
+        "sponsors footer footer"
+    ;
 }
