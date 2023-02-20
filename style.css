@@ -1,13 +1,11 @@
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px);
-    justify-items: end;
-    align-items: center;
+.boxWithTransition {
+    height: 200px;
+    width: 400px;
+    background-color: gray;
 }
 
-.content {
-    background: lightblue;
-    height: 30px;
-    width: 30px;
+.boxWithTransition:hover {
+    transition: all 0.8s ease;
+    width: 700px;
+    background-color: blue;
 }
