@@ -1,11 +1,24 @@
-.boxWithTransition {
+.boxWithAnimation {
+    animation: 0.8s ease-in 0.5s infinite alternate goBottom;
     height: 200px;
-    width: 400px;
-    background-color: gray;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
 }
 
-.boxWithTransition:hover {
-    transition: all 0.8s ease;
-    width: 700px;
-    background-color: blue;
+@keyframes goBottom {
+
+    0% {
+        transform: translateY(0);
+        background-color: rgb(0, 0, 0);
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        transform: translateY(400px);
+        background-color: red;
+    }
 }
