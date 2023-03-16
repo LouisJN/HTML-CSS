@@ -1,24 +1,24 @@
-.boxWithAnimation {
-    animation: 0.8s ease-in 0.5s infinite alternate goBottom;
-    height: 200px;
-    width: 200px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 50%;
+.change-width {
+    border-style: solid;
+    width: 40%;
 }
 
-@keyframes goBottom {
+.div {
+    font-size: 1rem;
+}
 
-    0% {
-        transform: translateY(0);
-        background-color: rgb(0, 0, 0);
-    }
+.change-height {
+    border-style: solid;
+    height: 2rem;
+}
 
-    50% {
-        background-color: yellow;
-    }
+.bottom-right {
+    float: right;
+    width: 50%;
+    color: red;
+    font-size: 2rem;
+}
 
-    100% {
-        transform: translateY(400px);
-        background-color: red;
-    }
+.change-viewport {
+    font-size: 7vh;
 }
