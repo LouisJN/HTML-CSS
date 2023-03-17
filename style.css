@@ -1,24 +1,43 @@
-.change-width {
+.first-block {
     border-style: solid;
     width: 40%;
 }
 
-.div {
-    font-size: 1rem;
-}
-
-.change-height {
+.second-block {
     border-style: solid;
-    height: 2rem;
+    height: 2em;
 }
 
-.bottom-right {
+.third-block {
     float: right;
     width: 50%;
-    color: red;
-    font-size: 2rem;
 }
 
-.change-viewport {
-    font-size: 7vh;
+@media screen and (max-width: 760px) {
+    .first-block {
+        border-style: solid;
+        width: 40%;
+        float: bottom;
+    }
+
+}
+
+@media print {
+
+    .second-block {
+        border-style: solid;
+        height: 2em;
+        width: 75%;
+    }
+}
+
+
+
+@media screen and (min-width:1024px),
+(max-height:800px) {
+    .third-block {
+        background-color: red;
+        float: right;
+        width: 50%;
+    }
 }
